@@ -1,0 +1,47 @@
+@media only screen and (max-width: 800px){
+    body {
+        color: yellow;
+        background: yellow;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    header{
+        position: aboslute;
+    }
+
+    #mainicon{
+        display: inline-block;
+    }
+
+    #lowerheader nav ul, #lowerheader nav:active ul{
+        display: none;
+        position: absolute;
+        padding: 25px;
+        background:#ccd6e8;
+        border: 1px solid #FFF;
+        right: 20px;
+        top: 60px;
+        width: 50%;
+        border-radius: 2px 0 5px 2px;
+    }
+
+    #lowerheader nav li{
+        text-align: center;
+        width: 100%;
+        padding: 10px 0;
+        margin: 0;
+    }
+
+    #lowerheader nav:hover ul{
+        display: block;
+    }
+
+    .tvGuide #col{
+        float: left;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+
+    }
+}
