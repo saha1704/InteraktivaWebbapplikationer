@@ -1,3 +1,116 @@
-p{
-    color:black;
+body{
+    color: white;
+    font-family: Arial;
+    margin: 0;
+    padding: 0;
 }
+
+p{
+
+}
+
+#upperheader{
+    background: #333333;
+    margin: 0;
+    padding: 10px;
+}
+
+#headerwrapper{
+    float: left;
+    width: 30%;
+}
+
+#mainicon{
+    display:inline-block;
+    height: 40px;
+    width: 40px;
+}
+
+#title{
+    font-size: 48px;
+    display: inline-block;
+    padding: 0 1%;
+}
+
+#Greeting{
+    font-size: 20px;
+    display: inline-block;
+}
+
+#LogIn{
+    float: right;   
+}
+
+#mobilenav{
+    display: hidden;
+    display: inline-block;
+}
+
+#lowerheader{
+    background: gray; 
+    width: 100%; 
+    height: auto;
+    display:inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+#lowerheader nav{
+    width: 50%;
+    margin: 0;
+}
+
+#lowerheader nav ul{
+    list-style: none;
+    padding: 1%;
+    float: left;
+    width: 50%;
+}
+
+#lowerheader nav ul li{
+    display: inline-block;
+    padding: 0.2% 1%;
+    margin: 1%;
+    background: #333333;
+}
+
+#lowerheader nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.search{
+    display: block;
+    padding: 1%;
+	text-align: right;
+    float: right;
+}
+
+.search .searchText{
+	display: inline;
+}
+
+.search .searchButton{
+	display: inline;
+}
+
+footer {
+    clear: both;
+    background: #333333;
+}
+
+footer section{
+    float:left;
+    width: 25%;
+    margin: 5%;    
+}
+
+
+.clearfix:before, .clearfix:after{
+    content: "";
+    display:table;
+}
+.clear:after{
+    clear:both;
+}
+.clearfix{*zoom: 1;}
