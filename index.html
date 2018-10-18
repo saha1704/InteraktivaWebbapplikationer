@@ -6,9 +6,10 @@
 		<meta http-equiv="Content type" content="text/html" charset="UTF-8"/>
 		<meta name="viewport" content="width=divice-width, initial-scale=1.0"/>
 
-		<script src=""></script>
-		<link rel="stylesheet" href="responsiv.css"/>
+		<script src="javascript.js"></script>
+		<script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		<link rel="stylesheet" href="stilmall.css"/>
+		<link rel="stylesheet" href="responsiv.css"/>
 		<title>Tv-tablå</title>
 
 	</head>
@@ -16,20 +17,22 @@
 	<body>
 
 		<header id="upperheader" class="clearfix">
-			
+			<div id="todaycontainer">
+			<a href="#" id="today">Idag</a>
+			</div>
 			<a href="index.html" id="headerwrapper">
 				<img src="img/tv.png" alt="Huvudikon" id="mainicon">
-				<h1 id="title">Tv-tablå</h1>
-				<p id="greeting">Placeholder</p>
+				<h1 id="title" class="disappear">Tv-tablå</h1>
+				<p id="greeting" class="disappear">Placeholder</p>
 			</a>
 
-			<a id="login" href="#" >Logga in</a>
+			<a id="login" href="#" class="disappear">Logga in</a>
 			<div id="mobilemenu">
-				<img src="" alt="mobilemenu">
-				<ul>
-					<li><a href="#"></a>Kanaler</a></li>
-					<li><a href="#"></a>Sök</a></li>
-					<li><a href="#"></a>Logga in</a></li>
+				<img src="img/menu-icon.png" alt="mobilemenuicon" id="menuicon">
+				<ul class="disappear">
+					<li><a href="#">Kanaler</a></li>
+					<li><a href="#">Sök</a></li>
+					<li><a href="#">Logga in</a></li>
 				</ul>
 			</div>
 
@@ -38,7 +41,7 @@
 			<nav>
 				<ul>
 					<li><a href="#" class="current">Tv-tablå</a></li>
-					<li><a href="#">Kanaler</a></li>
+					<li class="disappear"><a href="#">Kanaler</a></li>
 					<li><a href="#">Film</a></li>
 					<li><a href="#">Serier</a></li>
 				</ul>
@@ -46,7 +49,7 @@
 			
 			
 			<div class="search">
-				<form action="#">
+				<form action="#" class="disappear">
 					<input class="searchText" type="text" name="searchsite" value="Sök.."/>
 					<input class="searchButton" type="submit" name="startsearch" class="button" value="Sök"/>
 				</form>
@@ -149,22 +152,22 @@
 
 
 		<footer class="clearfix">
-			<section>
+			<section class="footerSection">
 				<h3>Om oss</h3>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
 					sed do eiusmod tempor incididunt ut labore et </p>		
 			</section>
-			<section>
+			<section class="footerSection">
 				<h3>Kontakt</h3>
 				<p>Webbredaktör: Sandra Hansson </p>
 				<p>Webbredaktör: Martin Vestberg </p>
 				<a href="#" id="contactus">Kontakta oss</a>
 			</section>
-			<section>
+			<section class="footerSection">
 				<h3>Sociala medier</h3>
-				<img src="#" alt="Twitter">
-				<img src="#" alt="Facebook">
-				<img src="#" alt="Instagram">
+				<img src="img/facebook.png" alt="Facebook" class="socialmediaimg">
+				<img src="img/twitter.png" alt="Twitter" class="socialmediaimg">
+				<img src="img/instagram.png" alt="Instagram" class="socialmediaimg">
 			</section>
 			
 		</footer>

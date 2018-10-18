@@ -1,47 +1,116 @@
-@media only screen and (max-width: 800px){
+/* Surfplatta */
+
+@media screen and (max-width: 800px){
     body {
-        color: yellow;
-        background: yellow;
+        
     }
 }
 
-@media only screen and (max-width: 500px){
+/* Mobiltelefon */
+
+@media screen and (max-width: 400px){ 
     header{
-        position: aboslute;
+        position: aboslute; 
+    }
+
+    #upperheader{
+        text-align: center;
+        height:52px;
+    }
+
+    #headerwrapper{
+        display:inline-block;
+        width: 30%;
+        margin: 0 auto;
+    }
+
+    #todaycontainer{
+        display: block;
+        width: 30%;
+        margin-top: 8px;
+        font-size: 28px;
+        float: left;
+        margin-right: 4px;
+
+    }
+
+    #today{
+        display: block;
+        float: left;
     }
 
     #mainicon{
-        display: inline-block;
+
+    }
+
+    #mobilemenu{
+        display: block;
+        float: right;
+        width: 30%;
+        margin-right: 20px;
+    }
+
+    #menuicon{
+        float: right;
+        width: 50px;
+        height: 50px;
+        
+    }
+
+    #lowerheader{
+        margin-bottom: 0;
+        height: 58px; 
+        top: 68px;    
+    }
+
+    #lowerheader nav{
+        margin: 1% 0;
     }
 
     #lowerheader nav ul, #lowerheader nav:active ul{
-        display: none;
-        position: absolute;
-        padding: 25px;
-        background:#ccd6e8;
-        border: 1px solid #FFF;
-        right: 20px;
-        top: 60px;
-        width: 50%;
-        border-radius: 2px 0 5px 2px;
+        float: none;
+        padding: 0;
+        margin: 0;
     }
 
-    #lowerheader nav li{
-        text-align: center;
-        width: 100%;
-        padding: 10px 0;
-        margin: 0;
+    #lowerheader nav ul li{
+       text-align: center;
+       padding: 3% 1%; 
+       margin: 1.2%;
+        width: 28%;
+        font-size: 95%;
+        font-style: bold;
     }
 
     #lowerheader nav:hover ul{
         display: block;
     }
 
+    .tvGuide{
+        margin-top: 138px;
+    }
+
     .tvGuide #col{
+        float: left;
+        width: 100%;
+        margin: 2% 0;
+        padding: 0;
+
+    }
+
+    .footerSection{
         float: left;
         width: 100%;
         margin: 0;
         padding: 0;
+    }
 
+    .socialmediaimg{
+        margin: 0 8px 20px 8px;
+    }
+
+    .disappear{
+        display: none !important;
+        padding: 0;
     }
 }
