@@ -21,7 +21,6 @@ header{
 #upperheader{
     background: hsl(0, 0%, 20%);
     margin: 0;
-    padding: 8px 10px;
     overflow:hidden;
     height:72px;
     width:100%;
@@ -65,6 +64,10 @@ header{
 
 #mobilemenu{
     display:none;
+}
+
+#mobilemenulist{
+    display: none;
 }
 
 #today{
@@ -137,20 +140,20 @@ header{
     border-radius: 5px;
 }
 
-.channelLogo{
+#channelLogo{
     height: 50px;
     width: 70px;
 	margin: 1% 0 0 1%;
 }
 
-.channelLogoTv3{
+#channelLogoTv3{
     height: 50px;
     width: 70px;
     margin: 1% 0 0 0;
     padding: 0;
 }
 
-.channelLogoKanal5{
+#channelLogoKanal5{
     height: 50px;
     width: 50px;
     margin: 1% 0 0 0;

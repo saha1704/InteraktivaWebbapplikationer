@@ -6,10 +6,11 @@
 		<meta http-equiv="Content type" content="text/html" charset="UTF-8"/>
 		<meta name="viewport" content="width=divice-width, initial-scale=1.0"/>
 
-		<script src="javascript.js"></script>
 		<script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		
 		<link rel="stylesheet" href="stilmall.css"/>
 		<link rel="stylesheet" href="responsiv.css"/>
+		
 		<title>Tv-tablå</title>
 
 	</head>
@@ -20,7 +21,7 @@
 			<div id="todaycontainer">
 			<a href="#" id="today">Idag</a>
 			</div>
-			<a href="index.html" id="headerwrapper">
+			<a href="index.html" id="headerwrapper" class="clearfix">
 				<img src="img/tv.png" alt="Huvudikon" id="mainicon">
 				<h1 id="title" class="disappear">Tv-tablå</h1>
 				<p id="greeting" class="disappear">Placeholder</p>
@@ -28,11 +29,19 @@
 
 			<a id="login" href="#" class="disappear">Logga in</a>
 			<div id="mobilemenu">
-				<img src="img/menu-icon.png" alt="mobilemenuicon" id="menuicon">
-				<ul class="disappear">
+				<a href="javascript:void(0);" onclick="toggleMobileMenu()" id="menuicon"> <img src="img/menu-icon.png" alt="mobilemenuicon" id="menuicon"> </a>
+				<ul id="mobilemenulist">
+					<li id="exitmenuicon" onclick="toggleMobileMenu()"><a href="#"><img src="img/x.png" alt="exiticon" id="exitmenuicon"></a></li>
 					<li><a href="#">Kanaler</a></li>
-					<li><a href="#">Sök</a></li>
 					<li><a href="#">Logga in</a></li>
+					<li> 			
+						<div id="searchmenu">
+							<form action="#">
+								<input id="menusearchtext" type="text" name="searchsite" value="Sök.."/>
+								<input id="menusearchbutton"  type="submit" name="startsearch" class="button" value="Sök"/>
+							</form>
+						</div>
+					</li>
 				</ul>
 			</div>
 
@@ -61,7 +70,7 @@
 
 		<section class="tvGuide clearfix">
 			<div id="col">
-					<img src="img/SVT1_Logotyp.png" alt="svt1" class="channelLogo"/>
+					<img src="img/SVT1_Logotyp.png" alt="svt1" id="channelLogo"/>
 					<table id="guideTable">
 							<tr id="program"> 
 								<td id="time">
@@ -91,7 +100,7 @@
 					</div>
 
 				<div id="col">
-				<img src="img/tv3.png" alt="tv3" class="channelLogoTv3"/>
+				<img src="img/tv3.png" alt="tv3" id="channelLogoTv3"/>
 				<table id="guideTable">
 					<tr id="program"> 
 						<td id="time">
@@ -120,7 +129,7 @@
 				</table>
 			</div>
 			<div id="col">
-				<img src="img/Kanal5.png" alt="kanal5" class="channelLogoKanal5"/>
+				<img src="img/Kanal5.png" alt="kanal5" id="channelLogoKanal5"/>
 				<table id="guideTable">
 						<tr id="program"> 
 							<td id="time">
@@ -171,6 +180,8 @@
 			</section>
 			
 		</footer>
+
+		<script src="javascript.js"></script>
 
 	</body>
 </html>

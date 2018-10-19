@@ -9,58 +9,86 @@
 /* Mobiltelefon */
 
 @media screen and (max-width: 400px){ 
-    header{
-        position: aboslute; 
-    }
 
     #upperheader{
         text-align: center;
         height:52px;
+        z-index: 100;
     }
 
     #headerwrapper{
         display:inline-block;
-        width: 30%;
+        width: 33%;
+        text-align: center;
         margin: 0 auto;
     }
 
     #todaycontainer{
         display: block;
-        width: 30%;
-        margin-top: 8px;
+        width: 33%;
+        padding-top: 8px;
         font-size: 28px;
         float: left;
-        margin-right: 4px;
-
     }
 
     #today{
         display: block;
-        float: left;
-    }
-
-    #mainicon{
-
     }
 
     #mobilemenu{
         display: block;
         float: right;
-        width: 30%;
-        margin-right: 20px;
+        width: 33%;
     }
-
+    
     #menuicon{
-        float: right;
         width: 50px;
         height: 50px;
-        
+        display: block;
+        margin: 0 auto;
+    }
+
+    #mobilemenulist{
+        position: fixed;
+        background: hsl(0, 0%, 20%);
+        top:0;
+        right: 0;
+        width: 98vw;
+        height: 98vh;
+        padding-top: 70px;
+        margin: 0;
+    }
+
+    #mobilemenulist li{
+        padding-bottom: 35px;
+        list-style: none;
+        font-size: 34px;
+    }
+
+    #exitmenuicon{
+        width: 30px;
+        height: 30px;
+
+        position:absolute;
+        top: 10px;
+        right: 10px;
+    }
+
+    #menusearchtext{
+        width: 85%;
+        margin-left: 15px;
+    }
+
+    #menusearchbutton{
+        width: 100px;
+        margin: 0 auto;
     }
 
     #lowerheader{
         margin-bottom: 0;
         height: 58px; 
-        top: 68px;    
+        top: 68px;
+        z-index: 90;
     }
 
     #lowerheader nav{
