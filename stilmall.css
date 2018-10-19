@@ -5,6 +5,7 @@ body{
     padding: 0;
 }
 
+
 a{
     text-decoration:none;
     color:#D3D3D3;
@@ -29,6 +30,8 @@ header{
 }
 
 #headerwrapper{
+    margin-top:10px;
+    margin-left:10px;
     color:white;
     text-decoration: none;
     float: left;
@@ -83,7 +86,7 @@ header{
     padding: 0;
     height: auto;
     left:0;
-    top:88px;
+    top:72px;
 }
 
 #lowerheader nav{
@@ -113,14 +116,26 @@ header{
     float: right;
 }
 
-.search .searchText{
+.search #searchText{
     display: inline;
     padding: 5px;
+    font-size: 20px;
+    border:none;
+
 }
 
-.search .searchButton{
-    display: inline;
+.search #searchButton{
+    float: right;
     padding: 5px;
+    border:none;
+}
+
+.search #searchButton:hover{
+    background: dimgray;
+}
+
+.search .searchbutton:hover{
+    background: #333333;
 }
 
 .tvGuide{
@@ -130,17 +145,46 @@ header{
     overflow: hidden;
 }
 
-#col{
+.col{
     float: left;
     text-align: left;
 	padding: 0;
-	margin: 1.5%;
+    margin: 1%;
+    min-width: 200px;
     width: 30%;
+    max-width:300px;
     background: gray;
     border-radius: 5px;
+    
 }
 
-#channelLogo{
+.col ul{
+    padding:0 1% 1% 1%;
+    margin: 0 auto;
+    width: 100%;
+    text-align: left;
+}
+
+.col ul li{
+    list-style: none;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.col ul li p{
+    display:inline-block;
+    vertical-align: top;
+    margin:1%;
+}
+
+.col ul .time{
+    padding-left:3%;
+    padding-right:5%;
+    font-weight: bold;
+}
+
+#channelLogoSvt1{
     height: 50px;
     width: 70px;
 	margin: 1% 0 0 1%;
@@ -158,38 +202,6 @@ header{
     width: 50px;
     margin: 1% 0 0 0;
     padding: 0;
-}
-
-#guideTable{
-    margin: 0.6%;
-    padding: 0;
-    border-collapse: collapse;
-    border-spacing: 0;
-    border: 1px solid black;
-    width: 99%;
-}
-
-table tr{
-    margin: 0;
-    padding: 0;
-    line-height: 6px; 
-}
-
-table tr #time{
-	text-align: left;
-	font-size: 16px;
-	margin: 0;
-    padding: 0;
-    border: 1px solid black;
-    line-height: 6px;
-}
-
-table tr #title{
-	text-align: left;
-	font-size: 16px;
-	margin: 0 1%;
-    padding: 0;
-    border: 1px solid black;
 }
 
 footer {
