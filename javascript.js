@@ -1,9 +1,12 @@
 function toggleMobileMenu(){
+    
     var x = document.getElementById("mobilemenulist");
 
     if (x.style.display === "block") {
-        x.style.display = "none";
+        $(x).hide(200);
     } else {
-        x.style.display = "block";
+        $(x).show(200);
+
     }
+
 }
