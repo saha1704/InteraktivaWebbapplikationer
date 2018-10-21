@@ -10,7 +10,6 @@
 		
 		<link rel="stylesheet" href="stilmall.css"/>
 		<link rel="stylesheet" href="responsiv.css"/>
-		
 		<title>Tv-tablå</title>
 
 	</head>
@@ -29,10 +28,10 @@
 
 			<a id="login" href="#" class="disappear tabletdisappear">Logga in</a>
 			<div id="mobilemenu">
-				<a href="javascript:void(0);" onclick="toggleMobileMenu()" id="menuicon"> <img src="img/menu-icon.png" alt="mobilemenuicon" id="menuicon"> </a>
+				<a href="javascript:void(0);" id="menuicon"> <img src="img/menu-icon.png" alt="mobilemenuicon" id="menuicon"> </a>
 				<ul id="mobilemenulist">
-					<li id="exitmenuicon" onclick="toggleMobileMenu()"><a href="#"><img src="img/x.png" alt="exiticon" id="exitmenuicon"></a></li>
-					<li><a href="#">Kanaler</a></li>
+					<li id="exitmenuicon" ><a href="#"><img src="img/x.png" alt="exiticon" id="exitmenuicon"></a></li>
+					<li><a href="#" id="channelbutton">Kanaler</a></li>
 					<li><a href="#">Logga in</a></li>
 					<li> 			
 						<div id="searchmenu">
@@ -132,6 +131,7 @@
 		</footer>
 
 		<script src="javascript.js"></script>
+		<script src = "/jquery.js"></script>
 
 	</body>
 </html>

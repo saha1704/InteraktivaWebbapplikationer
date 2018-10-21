@@ -1,4 +1,4 @@
-function toggleMobileMenu(){
+/*function toggleMobileMenu(){
     
     var x = document.getElementById("mobilemenulist");
 
@@ -9,4 +9,4 @@ function toggleMobileMenu(){
 
     }
 
-}
+}*/
