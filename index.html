@@ -8,8 +8,10 @@
 
 		<script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
 		<link rel="stylesheet" href="stylesheets/stilmall.css"/>
 		<link rel="stylesheet" href="stylesheets/responsiv.css"/>
+		
 		<title>Tv-tablå</title>
 
 	</head>
@@ -48,7 +50,7 @@
 		<header id="lowerheader" class="clearfix">
 			<nav>
 				<ul>
-					<a href="index.html" class="current"><li>Tablå</li></a>
+					<a href="index.html" class="current"><li class="current">Tablå</li></a>
 					<a href="Channels.html"><li class="disappear">Kanaler</li></a>
 					<a href="Movies.html"><li>Film</li></a>
 					<a href="Series.html"><li>Serier</li></a>
@@ -69,9 +71,9 @@
 		<div id="container">
 
 			<section id="filterdaycontainer">
-				<a href="#" id="yesterdaybutton" class="filterdaybutton"><li>Igår</li></a>
-				<a href="#" id="todaydaybutton" class="filterdaybutton"><li>Idag</li></a>
-				<a href="#" id="tomorrowbutton" class="filterdaybutton"><li>Imorgon</li></a>
+				<a href="#" id="yesterdaybutton" class="filterdaybutton"><i class="fas fa-angle-left"></i><li>Igår</li></a>
+				<a href="#" id="todaydaybutton" class="filterdaybutton currentfilterday"><li>Idag</li></a>
+				<a href="#" id="tomorrowbutton" class="filterdaybutton"><li>Imorgon <i class="fas fa-angle-right"></i></li></a>
 			</section>
 
 
@@ -131,9 +133,9 @@
 				</section>
 				<section class="footerSection">
 					<h3>Sociala medier</h3>
-					<img src="img/facebook.png" alt="Facebook" class="socialmediaimg">
-					<img src="img/twitter.png" alt="Twitter" class="socialmediaimg">
-					<img src="img/instagram.png" alt="Instagram" class="socialmediaimg">
+					<a href="#" > <i id="facebook" class="fab fa-facebook-square fa-3x fa-fw" class="socialmediaimg"></i></a>
+					<a href="#" > <i id="twitter" class="fab fa-twitter fa-3x fa-fw" class="socialmediaimg"></i></a>
+					<a href="#" > <i id="instagram" class="fab fa-instagram fa-3x fa-fw" class="socialmediaimg"></i></a>
 				</section>
 				
 			</footer>
