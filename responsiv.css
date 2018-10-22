@@ -256,6 +256,9 @@
         display: block;
     }
 
+    #filterdaycontainer{
+        display: none;
+    }
 
     .tvGuide{
         margin-top: 115px;
