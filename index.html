@@ -8,8 +8,8 @@
 
 		<script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		
-		<link rel="stylesheet" href="stilmall.css"/>
-		<link rel="stylesheet" href="responsiv.css"/>
+		<link rel="stylesheet" href="stylesheets/stilmall.css"/>
+		<link rel="stylesheet" href="stylesheets/responsiv.css"/>
 		<title>Tv-tablå</title>
 
 	</head>
@@ -26,7 +26,7 @@
 				<p id="greeting" class="disappear tabletdisappear">Placeholder</p>
 			</a>
 
-			<a id="login" href="#" class="disappear tabletdisappear">Logga in</a>
+			<a id="login" href="LogIn.html" class="disappear tabletdisappear">Logga in</a>
 			<div id="mobilemenu">
 				<a href="javascript:void(0);" id="menuicon"> <img src="img/menu-icon.png" alt="mobilemenuicon" id="menuicon"> </a>
 				<ul id="mobilemenulist">
@@ -48,10 +48,10 @@
 		<header id="lowerheader" class="clearfix">
 			<nav>
 				<ul>
-					<li><a href="#" class="current">Tablå</a></li>
-					<li class="disappear"><a href="#">Kanaler</a></li>
-					<li><a href="#">Film</a></li>
-					<li><a href="#">Serier</a></li>
+					<a href="index.html" class="current"><li>Tablå</li></a>
+					<a href="Channels.html"><li class="disappear">Kanaler</li></a>
+					<a href="Movies.html"><li>Film</li></a>
+					<a href="Series.html"><li>Serier</li></a>
 				</ul>
 			</nav>
 			
@@ -66,78 +66,83 @@
 			
 		</header>
 		
-		<section id="filterdaycontainer">
-			<button id="yesterdaybutton" type="submit" class="filterdaybutton"><a href="#">Igår</a></button>
-			<button id="todaybutton" type="submit" class="filterdaybutton current"><a href="#">Idag</a></button>
-			<button id="tomorrowbutton" type="submit" class="filterdaybutton"><a href="#">Imorgon</a></button>
-		</section>
+		<div id="container">
+
+			<section id="filterdaycontainer">
+				<a href="#" id="yesterdaybutton" class="filterdaybutton"><li>Igår</li></a>
+				<a href="#" id="todaydaybutton" class="filterdaybutton"><li>Idag</li></a>
+				<a href="#" id="tomorrowbutton" class="filterdaybutton"><li>Imorgon</li></a>
+			</section>
 
 
-		<section class="tvGuide clearfix">
-			<div class="col">
-					<ul>
-							<li><img src="img/SVT1_Logotyp.png" alt="svt1" id="channelLogoSvt1" class="channellogo"/></li>
-							<li><p><span class="time">18.30</span> <span class="programtitle">Arga snickaren aasdfasdfasdfasd</span></p></li>
-							<li><p><span class="time">18.30</span> <span class="programtitle">Arga snickaren aasdfasdfasdfasd</span></p></li>
-							<li><p><span class="time">18.30</span> <span class="programtitle">Arga snickaren aasdfasdfasdfasd</span></p></li>
-						</ul>
+			<section class="tvGuide clearfix">
+				<div class="col">
+						<ul>
+								<li><img src="img/SVT1_Logotyp.png" alt="svt1" id="channelLogoSvt1" class="channellogo"/></li>
+								<li><p><span class="time">18.30</span> <span class="programtitle">Arga snickaren aasdfasdfasdfasd</span></p></li>
+								<li><p><span class="time">18.30</span> <span class="programtitle">Arga snickaren aasdfasdfasdfasd</span></p></li>
+								<li><p><span class="time">18.30</span> <span class="programtitle">Arga snickaren aasdfasdfasdfasd</span></p></li>
+							</ul>
+						
+				</div>		
+				<div class="col">
+						<ul>
+								<li><img src="img/tv3.png" alt="tv3" id="channelLogoTv3" class="channellogo"/></li>
+								<li><p><span class="time">18.30</span> <span class="programtitle">Arga snickaren aasdfasdfasdfasd</span></p></li>
+								<li><p><span class="time">18.30</span> <span class="programtitle">Arga snickaren aasdfasdfasdfasd</span></p></li>
+								<li><p><span class="time">18.30</span> <span class="programtitle">Arga snickaren aasdfasdfasdfasd</span></p></li>
+							</ul>
 					
-			</div>		
-			<div class="col">
+				</div>
+				<div class="col">
+						<ul>
+								<li><img src="img/Kanal5.png" alt="kanal5" id="channelLogoKanal5" class="channellogo"/></li>
+								<li><p><span class="time">18.30</span> <span class="programtitle">Arga snickaren aasdfasdfasdfasd</span></p></li>
+								<li><p><span class="time">18.30</span> <span class="programtitle">Arga snickaren aasdfasdfasdfasd</span></p></li>
+								<li><p><span class="time">18.30</span> <span class="programtitle">Arga snickaren aasdfasdfasdfasd</span></p></li>
+							</ul>
+					
+				</div>
+
+				<div class="col">
 					<ul>
-							<li><img src="img/tv3.png" alt="tv3" id="channelLogoTv3" class="channellogo"/></li>
-							<li><p><span class="time">18.30</span> <span class="programtitle">Arga snickaren aasdfasdfasdfasd</span></p></li>
-							<li><p><span class="time">18.30</span> <span class="programtitle">Arga snickaren aasdfasdfasdfasd</span></p></li>
-							<li><p><span class="time">18.30</span> <span class="programtitle">Arga snickaren aasdfasdfasdfasd</span></p></li>
-						</ul>
+						<li><img src="img/x.png" alt="kanal5" id="channelLogoKanal5" class="channellogo"/></li>
+						<li><p><span class="time">18.30</span> <span class="programtitle">Arga snickaren aasdfasdfasdfasd</span></p></li>
+						<li><p><span class="time">18.30</span> <span class="programtitle">Arga snickaren aasdfasdfasdfasd</span></p></li>
+						<li><p><span class="time">18.30</span> <span class="programtitle">Arga snickaren aasdfasdfasdfasd</span></p></li>
+					</ul>
+				</div>
+
+
+			</section>
+
+
+			<footer class="clearfix">
+				<section class="footerSection">
+					<h3>Om oss</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+						sed do eiusmod tempor incididunt ut labore et </p>		
+				</section>
+				<section class="footerSection">
+					<h3>Kontakt</h3>
+					<p>Webbredaktör: Sandra Hansson </p>
+					<p>Webbredaktör: Martin Vestberg </p>
+					<a href="#" id="contactus">Kontakta oss</a>
+				</section>
+				<section class="footerSection">
+					<h3>Sociala medier</h3>
+					<img src="img/facebook.png" alt="Facebook" class="socialmediaimg">
+					<img src="img/twitter.png" alt="Twitter" class="socialmediaimg">
+					<img src="img/instagram.png" alt="Instagram" class="socialmediaimg">
+				</section>
 				
-			</div>
-			<div class="col">
-					<ul>
-							<li><img src="img/Kanal5.png" alt="kanal5" id="channelLogoKanal5" class="channellogo"/></li>
-							<li><p><span class="time">18.30</span> <span class="programtitle">Arga snickaren aasdfasdfasdfasd</span></p></li>
-							<li><p><span class="time">18.30</span> <span class="programtitle">Arga snickaren aasdfasdfasdfasd</span></p></li>
-							<li><p><span class="time">18.30</span> <span class="programtitle">Arga snickaren aasdfasdfasdfasd</span></p></li>
-						</ul>
-				
-			</div>
+			</footer>
 
-			<div class="col">
-				<ul>
-					<li><img src="img/x.png" alt="kanal5" id="channelLogoKanal5" class="channellogo"/></li>
-					<li><p><span class="time">18.30</span> <span class="programtitle">Arga snickaren aasdfasdfasdfasd</span></p></li>
-					<li><p><span class="time">18.30</span> <span class="programtitle">Arga snickaren aasdfasdfasdfasd</span></p></li>
-					<li><p><span class="time">18.30</span> <span class="programtitle">Arga snickaren aasdfasdfasdfasd</span></p></li>
-				</ul>
-			</div>
+		</div>
 
+			<script src="javascript.js"></script>
+			<script src = "jquery.js"></script>
 
-		</section>
-
-
-		<footer class="clearfix">
-			<section class="footerSection">
-				<h3>Om oss</h3>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-					sed do eiusmod tempor incididunt ut labore et </p>		
-			</section>
-			<section class="footerSection">
-				<h3>Kontakt</h3>
-				<p>Webbredaktör: Sandra Hansson </p>
-				<p>Webbredaktör: Martin Vestberg </p>
-				<a href="#" id="contactus">Kontakta oss</a>
-			</section>
-			<section class="footerSection">
-				<h3>Sociala medier</h3>
-				<img src="img/facebook.png" alt="Facebook" class="socialmediaimg">
-				<img src="img/twitter.png" alt="Twitter" class="socialmediaimg">
-				<img src="img/instagram.png" alt="Instagram" class="socialmediaimg">
-			</section>
-			
-		</footer>
-
-		<script src="javascript.js"></script>
-		<script src = "jquery.js"></script>
-
+		
 	</body>
 </html>

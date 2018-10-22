@@ -11,8 +11,8 @@ a{
     color: #D3D3D3;
 } 
 
-a:active{
-    background: #9C2424;
+.current{
+
 }
 
 a:hover{
@@ -143,8 +143,11 @@ header{
     background: #333333;
 }
 
-#filterdaycontainer{
+#container{
     margin-top: 158px;
+}
+
+#filterdaycontainer{
     text-align: center;
 }
 
@@ -152,11 +155,16 @@ header{
    background: #333333;
    display: inline-block;
    width: 20%;
-   height: 15%;
    font-size: 22px;
    margin: 0.5% 2%;
    border-color: gray;
    border-radius: 3px;
+   list-style: none;
+   
+}
+
+.filterdaybutton li{
+    padding: 3px;
 }
 
 #todaybutton a{
