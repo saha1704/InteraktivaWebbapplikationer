@@ -1,0 +1,211 @@
+p{
+    color: black;
+}
+
+#channellist{
+text-align: center;
+width: 100%;
+}
+
+#channellist ul{
+    width: 93%;
+    text-align: center;
+    padding: 0;
+}
+
+#channellist ul li{
+    box-sizing: border-box;
+    list-style: none;
+    margin: 1%; 
+    display: inline-block;
+}
+
+#channellist .channellink{
+    text-align: center;
+    color: black;
+    display: inline-block;
+    
+}
+
+#channelLogoSvt1{
+    padding-left: 30px;
+}
+
+#channelLogoTv3{
+    margin-right: 30px;
+}
+
+#channelLogoTv6{
+    width: px;
+    height: 45px;
+    padding-left: 45px;
+}
+
+#tv3 p{
+    text-align: left;
+    padding-left: 20px;
+}
+
+#channelinfocontainer{
+    display: inline-block;
+   overflow: hidden;
+}
+
+.day{
+    
+}
+
+.col{
+    float: left;
+    text-align: left;
+	padding: 0;
+    margin: 1%;
+    width: 31%;
+    border-radius: 5px;
+    background: #f2f2f2;
+}
+
+.channellogo{
+    padding: 0;
+    float: left;
+    padding: 0 40px 0 0px;
+    margin: 1% 0;
+}
+
+.col h2{
+    color: black;
+    font-size: 16px;
+    padding-top: 10px;
+}
+
+#svt1guide{
+    display: none;
+}
+
+#tv3guide{
+ display: none;
+}
+
+#kanal5guide{
+    display: none;
+   }
+
+#tv6guide{
+    display: none;
+   }
+
+footer{
+    clear: both;
+}
+
+.clearfix:before, .clearfix:after{
+    content: "";
+    display:table;
+}
+.clear:after{
+    clear:both;
+}
+.clearfix{*zoom: 1;}
+
+
+/* Responsiv desgin Surfplatta */
+
+@media screen and (max-width: 800px){
+    #channellist ul{
+        box-sizing: border-box;
+        padding: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    #channellist ul li{
+        box-sizing: border-box;
+        list-style: none;
+        margin: 1px; 
+        display: inline-block;
+        width: 100px;
+        padding: 0;
+        overflow: hidden;
+    }
+
+    
+    #channellist ul #svt1box{
+        margin-left: 10px;
+    }
+
+    #channelLogoSvt1{
+        padding-left: 0;
+    }
+
+    #svt1 p {
+        text-align: left;
+        padding-left: 25px;
+    }
+
+    #channellist ul #tv3box{
+        padding-left: 8px;
+    }
+
+    #channelLogoTv6{
+        padding-left: 15px;
+    }
+
+    #tv6 p {
+        text-align: left;
+        padding-left: 23px;
+    }
+
+}
+
+
+
+/* Responsiv desgin Mobiltelefon */
+
+@media screen and (max-width: 435px){
+    #channellist{
+        width: 100%;
+    }
+    
+    #channellist ul{
+        margin-left: 0;
+        padding: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    #channellist ul li{
+        box-sizing: border-box;
+        list-style: none;
+        margin: 1%; 
+        display: inline-block;
+        width: 20%;
+        padding: 0;
+        overflow: hidden;
+    }
+
+    #channellist ul #svt1box{
+        margin-left: 10px;
+    }
+
+    #channelLogoSvt1{
+        padding-left: 0;
+    }
+
+    #svt1 p {
+        text-align: left;
+        padding-left: 25px;
+    }
+
+    #channellist ul #tv3box{
+        padding-left: 8px;
+    }
+
+    #channelLogoTv6{
+        padding-left: 10px;
+    }
+
+    #tv6 p {
+        text-align: left;
+        padding-left: 20px;
+    }
+}
