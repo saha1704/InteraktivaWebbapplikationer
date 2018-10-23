@@ -1,8 +1,8 @@
-#container h2{
-    color:black;
+#container .headercontainer{
+    color: black;
+    max-width: 540px;
+    margin: 0 auto;
 }
-
-
 
 #container{
     margin-top:180px;

@@ -1,3 +1,9 @@
+#container .headercontainer{
+    color: black;
+    max-width: 840px;
+    margin: 0 auto;
+}
+
 #contactform{
     background: #f1f1f1;
     max-width: 800px;
@@ -19,4 +25,42 @@
     border: 1px solid #ccc;
     resize: vertical;
 
+}
+
+#contactform #messagefield{
+    height: 200px;
+}
+
+#contactform label{
+    font-weight: bold;
+}
+
+#contactform .buttoncontainer{
+    width: 100%;
+    text-align: right;
+}
+
+#contactform .buttoncontainer button{
+    font-size: 130%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100px;
+    border-radius: 3px;
+}
+
+/*MEDIA QUERYS*/
+
+@media screen and (max-width: 840px){ 
+    #contactform .buttoncontainer{
+        width: 100%;
+        text-align: center;
+    }
+
+    #contactform .buttoncontainer button{
+        width: 100%;
+    }
 }
