@@ -1,11 +1,18 @@
+#lowerheader{
+    display:none;
+}
+
+
+
 #container .headercontainer{
     color: black;
+    font-size: 130%;
     max-width: 540px;
     margin: 0 auto;
 }
 
 #container{
-    margin-top:180px;
+    margin-top:120px;
 }
 
 #loginform{
@@ -16,9 +23,18 @@
     color:black;
     border:  2px solid #ccc;
     border-radius: 5px;
-    margin-bottom: 30px;
+    margin-bottom: 60px;
     
 }
+
+#loginform .iconcontainer{
+    text-align: right;
+}
+
+#loginform .iconcontainer i{
+    color:#9C2424;
+}
+
 
 #loginform .imgcontainer{
     text-align: center;
@@ -47,7 +63,21 @@
     border: none;
     cursor: pointer;
     width: 100%;
+    border-radius: 4px;
 }
+
+#loginform #createbutton{
+    background: white;
+    color:black;
+    font-size: 100%;
+    padding: 10px 20px;
+    border-radius: 4px;
+}
+
+#loginform #createbutton:hover{
+    background: lightgray;
+}
+
 
 #loginform button:hover{
     opacity:0.8;
@@ -68,7 +98,7 @@
 @media screen and (max-width: 500px){ 
 
     #container{
-        margin-top: 135px;
+        margin-top: 80px;
     }
 
     #loginform{
@@ -82,6 +112,13 @@
 
     #loginform input {
         font-size: 100%;
+    }
+
+    #container .headercontainer{
+        color: black;
+        font-size: 90%;
+        max-width: 540px;
+        margin: 0 auto;
     }
     
 

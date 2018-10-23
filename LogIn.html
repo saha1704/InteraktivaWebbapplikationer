@@ -73,12 +73,16 @@
 		
 
         <div id="container">
+			
 
 			<div class="headercontainer">
 					<h2>Inloggning</h2>
 			</div>
 		
 			<form id="loginform">
+				<div class="iconcontainer">
+					<a href="index.html"> <i class="fas fa-times-circle fa-lg"></i> </a>
+				</div>
 				<div class="imgcontainer">
 					<i class="fas fa-user fa-7x"></i>
 				</div>
@@ -91,9 +95,11 @@
 					<input id="passwordfield" type="password"  name="password" required>
 
 					<button type="submit">Logga in</button>
+					<button id="createbutton">Skapa konto</button>
 					<div class="linkcontainer">
 						<a href="#">Glömt lösenord?</a>
 					</div>
+					
 					
 					
 				</div>
@@ -103,25 +109,26 @@
             
 
             <footer class="clearfix">
-                <section class="footerSection">
-                    <h3>Om oss</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                        sed do eiusmod tempor incididunt ut labore et </p>		
-                </section>
-                <section class="footerSection">
-                    <h3>Kontakt</h3>
-                    <p>Webbredaktör: Sandra Hansson </p>
-                    <p>Webbredaktör: Martin Vestberg </p>
-                    <a href="ContactForm.html" id="contactus">Kontakta oss</a>
-                </section>
-                <section class="footerSection">
-                    <h3>Sociala medier</h3>
-                    <img src="img/facebook.png" alt="Facebook" class="socialmediaimg">
-                    <img src="img/twitter.png" alt="Twitter" class="socialmediaimg">
-                    <img src="img/instagram.png" alt="Instagram" class="socialmediaimg">
-                </section>
-                
-            </footer>
+				<div class="footeritemwrapper">
+					<section class="footerSection">
+						<h3>Om oss</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+							sed do eiusmod tempor incididunt ut labore et </p>		
+					</section>
+					<section class="footerSection">
+						<h3>Kontakt</h3>
+						<p>Webbredaktör: Sandra Hansson </p>
+						<p>Webbredaktör: Martin Vestberg </p>
+						<a href="ContactForm.html" id="contactus">Kontakta oss</a>
+					</section>
+					<section class="footerSection">
+						<h3>Sociala medier</h3>
+						<a href="#" > <i id="facebook" class="fab fa-facebook-square fa-3x fa-fw" class="socialmediaimg"></i></a>
+						<a href="#" > <i id="twitter" class="fab fa-twitter fa-3x fa-fw" class="socialmediaimg"></i></a>
+						<a href="#" > <i id="instagram" class="fab fa-instagram fa-3x fa-fw" class="socialmediaimg"></i></a>
+					</section>
+			</div>
+			</footer>
             
         </div>
 
