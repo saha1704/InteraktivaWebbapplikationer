@@ -10,6 +10,7 @@
 
 		<script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
 		<link rel="stylesheet" href="stylesheets/stilmall.css"/>
         <link rel="stylesheet" href="stylesheets/responsiv.css"/>
         <link rel="stylesheet" href="stylesheets/ContactForm.css"/>
@@ -29,7 +30,7 @@
 				<p id="greeting" class="disappear tabletdisappear">Placeholder</p>
 			</a>
 
-			<a id="login" href="#" class="disappear tabletdisappear">Logga in</a>
+			<a id="login" href="LogIn.html" class="disappear tabletdisappear">Logga in</a>
 			<div id="mobilemenu">
 				<a href="javascript:void(0);" id="menuicon"> <img src="img/menu-icon.png" alt="mobilemenuicon" id="menuicon"> </a>
 				<ul id="mobilemenulist">
@@ -68,32 +69,51 @@
 
 			
         </header>
-        
-        <div id="container">
+		
 
-                
+        <div id="container">
+			<div class="headercontainer">
+				<h2>Kontakta oss</h2>
+			</div>
+
+			<div id="contactform">
+				<label for="name">Namn</label>
+				<input type="text" name="name" Placeholder="Ditt namn...">
+				
+				<label for="email">E-postadress</label>
+				<input type="text" name="email" Placeholder="Din epostadress...">
+				
+				<label for="message">Meddelande</label>
+				<textarea id="messagefield" type="text" name="message" Placeholder="Skriv ditt meddelande till oss här..."></textarea>
+				
+				<div class="buttoncontainer">
+					<button type="submit" >Skicka</button>
+				</div>
+			
+			</div>
             
 
             <footer class="clearfix">
-                <section class="footerSection">
-                    <h3>Om oss</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                        sed do eiusmod tempor incididunt ut labore et </p>		
-                </section>
-                <section class="footerSection">
-                    <h3>Kontakt</h3>
-                    <p>Webbredaktör: Sandra Hansson </p>
-                    <p>Webbredaktör: Martin Vestberg </p>
-                    <a href="#" id="contactus">Kontakta oss</a>
-                </section>
-                <section class="footerSection">
-                    <h3>Sociala medier</h3>
-                    <img src="img/facebook.png" alt="Facebook" class="socialmediaimg">
-                    <img src="img/twitter.png" alt="Twitter" class="socialmediaimg">
-                    <img src="img/instagram.png" alt="Instagram" class="socialmediaimg">
-                </section>
-                
-            </footer>
+				<div class="footeritemwrapper">
+					<section class="footerSection">
+						<h3>Om oss</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+							sed do eiusmod tempor incididunt ut labore et </p>		
+					</section>
+					<section class="footerSection">
+						<h3>Kontakt</h3>
+						<p>Webbredaktör: Sandra Hansson </p>
+						<p>Webbredaktör: Martin Vestberg </p>
+						<a href="ContactForm.html" id="contactus">Kontakta oss</a>
+					</section>
+					<section class="footerSection">
+						<h3>Sociala medier</h3>
+						<a href="#" > <i id="facebook" class="fab fa-facebook-square fa-3x fa-fw" class="socialmediaimg"></i></a>
+						<a href="#" > <i id="twitter" class="fab fa-twitter fa-3x fa-fw" class="socialmediaimg"></i></a>
+						<a href="#" > <i id="instagram" class="fab fa-instagram fa-3x fa-fw" class="socialmediaimg"></i></a>
+					</section>
+			</div>
+			</footer>
             
         </div>
 
