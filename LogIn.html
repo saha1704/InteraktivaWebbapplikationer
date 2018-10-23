@@ -10,6 +10,7 @@
 
 		<script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
 		<link rel="stylesheet" href="stylesheets/stilmall.css"/>
         <link rel="stylesheet" href="stylesheets/responsiv.css"/>
         <link rel="stylesheet" href="stylesheets/LogIn.css"/>
@@ -29,7 +30,7 @@
 				<p id="greeting" class="disappear tabletdisappear">Placeholder</p>
 			</a>
 
-			<a id="login" href="#" class="disappear tabletdisappear">Logga in</a>
+			<a id="login" href="#" class="disappear tabletdisappear current">Logga in</a>
 			<div id="mobilemenu">
 				<a href="javascript:void(0);" id="menuicon"> <img src="img/menu-icon.png" alt="mobilemenuicon" id="menuicon"> </a>
 				<ul id="mobilemenulist">
@@ -51,7 +52,7 @@
         <header id="lowerheader" class="clearfix">
 			<nav>
 				<ul>
-					<a href="#" class="current"><li>Tablå</li></a>
+					<a href="#"><li>Tablå</li></a>
 					<a href="Channels.html"><li class="disappear">Kanaler</li></a>
 					<a href="#"><li>Film</li></a>
 					<a href="#"><li>Serier</li></a>
@@ -68,10 +69,33 @@
 
 			
         </header>
-        
+		
+		
+
         <div id="container">
 
-                
+			<form id="loginform">
+				<div class="imgcontainer">
+					<i class="fas fa-user fa-7x"></i>
+				</div>
+
+				<div class="formcontainer">
+					<label for:username>Användarnamn</label>
+					<input id="usernamefield" type="text"  name="username" required>
+					
+					<label for="password">Lösenord</label>
+					<input id="passwordfield" type="password"  name="password" required>
+
+					<button type="submit">Logga in</button>
+					<div class="linkcontainer">
+						<a href="#">Glömt lösenord?</a>
+					</div>
+					
+					
+				</div>
+
+
+			</form>
             
 
             <footer class="clearfix">

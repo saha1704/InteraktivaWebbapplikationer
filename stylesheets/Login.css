@@ -1,0 +1,88 @@
+#container h2{
+    color:black;
+}
+
+
+
+#container{
+    margin-top:180px;
+}
+
+#loginform{
+    background: #f1f1f1;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    color:black;
+    border:  2px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    
+}
+
+#loginform .imgcontainer{
+    text-align: center;
+}
+
+#loginform label{
+    font-weight: bold;
+}
+
+#loginform input{
+    font-size:120%;
+    width:100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+#loginform button{
+    font-size: 130%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+#loginform button:hover{
+    opacity:0.8;
+}
+
+#loginform .linkcontainer{
+    display:block;
+    padding: 15px 0;
+}
+
+#loginform .linkcontainer a{
+    color: dimgray;
+    float:right;
+}
+
+/*MEDIA QUERYS*/
+
+@media screen and (max-width: 500px){ 
+
+    #container{
+        margin-top: 135px;
+    }
+
+    #loginform{
+        margin-left:3px;
+        margin-right:3px;
+    }
+
+    #loginform .formcontainer{
+        margin-top:10px;
+    }
+
+    #loginform input {
+        font-size: 100%;
+    }
+    
+
+}

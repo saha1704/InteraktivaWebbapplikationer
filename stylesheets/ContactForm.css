@@ -1,0 +1,22 @@
+#contactform{
+    background: #f1f1f1;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    color:black;
+    border:  2px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+
+#contactform input, #contactform textarea{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 15px;;
+    font-size: 105%;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    resize: vertical;
+
+}
