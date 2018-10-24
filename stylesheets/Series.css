@@ -1,0 +1,106 @@
+#moviescontainer{
+    overflow: hidden;
+    width: 100%;
+}
+
+#imgmovie{
+    text-align: center;
+    margin: 1% 0;
+    width: 100%;
+    height: 250px;
+}
+
+#moviescontainer h1{
+    color: black;
+    font-size: 40px;
+    padding: 0;
+    margin: 0;
+}
+
+.box{
+    width: 100%;
+    padding: 0;
+    margin: 1%;
+    border-radius: 5px;
+    background: #f2f2f2;
+
+}
+
+#movielist{
+    padding: 0 0 1% 0;
+    margin: 2% 0;
+    width: 100%;
+    box-sizing: border-box;
+
+}
+
+#movielist li{
+    padding: 2px;
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+#movielist li p{
+    color: black;
+    font-size: 18px;
+}
+
+#listtitle{
+    font-size: 26px;
+    font-weight: bold; 
+}
+
+.time{
+    width: 10%;
+    float: left;
+}
+
+.programtitle{
+    width: 60%;
+    float: left;
+}
+
+.onchannel{
+    width: 15%;
+    float: left;
+}
+
+.genre {
+    width: 15%;
+}
+
+/* Responsiv desgin Surfplatta */
+
+@media screen and (max-width: 800px){
+
+    #imgmovie{
+        width: 100%;
+        height: 150px;
+    }
+
+    #movielist li p{
+        font-size: 16px;
+    }
+
+
+}
+
+@media screen and (max-width: 435px){
+
+    #imgmovie{
+        width: 100%;
+        height: 100px;
+    }
+
+    #moviescontainer h1{
+        font-size: 36px;
+        text-align: center;
+    }
+
+    #movielist li p{
+        font-size: 13px;
+    }
+
+}
