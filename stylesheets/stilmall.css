@@ -182,7 +182,7 @@ header{
 }
 
 .tvGuide{
-
+    width: 100%;
     color: black;
     background: #FFF;
     overflow: hidden;
@@ -193,8 +193,7 @@ header{
     text-align: left;
 	padding: 0;
     margin: 1%;
-    min-width: 200px;
-    max-width:450px;
+    width: 320px;
     border-radius: 5px;
     background: #f2f2f2;
 }
@@ -211,12 +210,16 @@ header{
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
+    padding-right:10px;
+
 }
 
 .col ul li p{
     display:inline-block;
     vertical-align: top;
     margin:1%;
+    width: 100%;
+
 }
 
 .col ul .time{
@@ -239,6 +242,13 @@ header{
 }
 
 #channelLogoKanal5{
+    height: 50px;
+    width: 50px;
+    margin: 1% 0 0 0;
+    padding: 0;
+}
+
+#channelLogoTv6{
     height: 50px;
     width: 50px;
     margin: 1% 0 0 0;

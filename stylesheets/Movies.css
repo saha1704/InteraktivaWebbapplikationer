@@ -60,14 +60,15 @@
 .programtitle{
     width: 60%;
     float: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding-right: 20px;
 }
 
 .onchannel{
     width: 15%;
     float: left;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
 }
 
 .genre {
