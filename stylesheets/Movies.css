@@ -65,6 +65,9 @@
 .onchannel{
     width: 15%;
     float: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .genre {
@@ -83,8 +86,6 @@
     #movielist li p{
         font-size: 16px;
     }
-
-
 }
 
 @media screen and (max-width: 435px){

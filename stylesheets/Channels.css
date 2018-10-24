@@ -1,4 +1,4 @@
-p{
+#container{
     color: black;
 }
 
@@ -6,6 +6,7 @@ p{
 text-align: center;
 width: 100%;
 }
+
 
 #channellist ul{
     width: 93%;
@@ -111,6 +112,10 @@ footer{
 /* Responsiv desgin Surfplatta */
 
 @media screen and (max-width: 800px){
+    #channellist{
+        width:100%;
+    }
+    
     #channellist ul{
         box-sizing: border-box;
         padding: 0;
@@ -127,10 +132,14 @@ footer{
         padding: 0;
         overflow: hidden;
     }
-
     
     #channellist ul #svt1box{
         margin-left: 10px;
+    }
+
+    .col{
+        width: 48%;
+        margin: 1%;
     }
 
     #channelLogoSvt1{
@@ -189,6 +198,12 @@ footer{
 
     #channelLogoSvt1{
         padding-left: 0;
+    }
+
+    .col{
+        width: 100%;
+        overflow: hidden;
+        margin: 2% 0;
     }
 
     #svt1 p {
