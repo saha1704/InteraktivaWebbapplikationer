@@ -5,6 +5,9 @@ body{
     padding: 0;
 }
 
+ul{
+    list-style: none;
+}
 
 a{
     text-decoration:none;
@@ -100,7 +103,6 @@ header{
 }
 
 #lowerheader nav ul{
-    list-style: none;
     padding-left:10px;
     float: left;
 }
@@ -121,6 +123,8 @@ header{
 	text-align: right;
     float: right;
 }
+
+
 
 .search #searchText{
     display: inline;

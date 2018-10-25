@@ -1,40 +1,42 @@
- function findprogram(){
+
+
+function findprogram(mobile){
     
-    var form, userinput, uls, lis = new Array, programs = new Array, pg, i, time, returnmessage,;
-    form = document.getElementById("searchform")
-    userinput = form.searchstring.value.toUpperCase();
-/*     userinput = document.getElementById("searchtext").value.toUpperCase();
-    
-    uls = document.getElementsByClassName("guide");*/
+    var form, userinput, uls, items;
 
-    var ul = document.getElementById("rapport");
-    var items = ul.getElementsByTagName("li");
-
-    for (i = 0; i < items.length; i++){
-        items[i].value
-
+    if(mobile == true){
+        form = document.getElementById("menusearchform")
+        userinput = form.menusearchstring.value;
     }
-
-
-
-
-
-
-
-
-        /*
-
-    for (i = 0; i < uls.length; i++){
-        var x = uls[i].getElementsByTagName("li");
-        lis.push(x);
+    else{
+        form = document.getElementById("searchform")
+        userinput = form.searchstring.value;
     }
-     for ( i = 0; i < lis.length; i++){
-        pg = lis[i].getElementsByClassName("programtitle")[0];
-        if (pg.innerHTML.toUpperCase().indexOf(userinput) > -1) {
-            time = lis[i].getElementsByClassName("time")
-            returnmessage = pg + " " + time;
-            alert(returnmessage);
-        }
-    } */
     
+    uls = document.getElementsByClassName("guide");
+
+
+
+
+    for (j = 0; j < uls.length; j++){
+        items = uls[j].getElementsByTagName("li");
+
+            /*for-loopen börjar med 1 som index eftersom första listobjektet alltid är en kanalbild*/
+
+        for (i = 1; i < items.length; i++){
+            var x = items[i].getElementsByClassName("programtitle");
+            pgtitle = x[0].innerHTML;
+    
+                if(pgtitle.toUpperCase() == userinput.toUpperCase()){
+                    var y = items[i].getElementsByClassName("time");
+                    pgtime = y[0].innerHTML;
+    
+                    alert(pgtitle + " går klockan " + pgtime + " idag");
+            }
+    }
+    
+        
+
+}
+
 }
