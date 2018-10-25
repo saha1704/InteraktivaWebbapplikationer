@@ -1,12 +1,22 @@
-/*function toggleMobileMenu(){
+ 
+ document.getElementById=("searchButton").onclick= function(){findprogram()};
+
+ function findprogram(){
     
-    var x = document.getElementById("mobilemenulist");
+    var x, userinput, ul, li, pg, i, time, returnmessage;
+    x = document.getElementById("searchtext");
+    userinput = x.value.toUpperCase();
+    ul = document.getElementsByClassName("guide");
+    li = ul.getElementsByTagName("li");
 
-    if (x.style.display === "block") {
-        $(x).hide(200);
-    } else {
-        $(x).show(200);
 
+    for ( i = 0; i < li.length; i++){
+        pg = li[i].getElementsByClassName("programtitle")[0];
+        if (pg.innerHTML.toUpperCase().indexOf(userinput) > -1) {
+            time = li[i].getElementsByClassName("time")
+            returnmessage = pg + " " + time;
+            alert(returnmessage);
+        }
     }
-
-}*/
+    
+}

@@ -8,14 +8,14 @@ $(document).ready(function(){
     });
 
     $(function() {
-        var programtitles = ['Rapport', 'Antikrundan', 'Jönssonligan & dynamit-Harry', 'Svenska Hollywoodfruar', 'Efterlyst', 'How I Met Your Mother', 'Arga snickaren', 'Breaking News med Filip & Fredrik', 'Ex on the beach Sverige', 'The Simpsons', '2 1/2 men', 'Erik och mackan']
+        var programtitles = ['Rapport', 'Antikrundan', 'Jönssonligan & dynamit-Harry', 'Svenska Hollywoodfruar', 'Efterlyst', 'How I Met Your Mother', 'Arga snickaren', 'Breaking News med Filip & Fredrik', 'Ex on the beach Sverige', 'The Simpsons', '2 1/2 men', 'Erik och mackan'];
 
         $("#searchText").autocomplete({
             source: programtitles,
             minLength:0
         })
 
-    })
+    });
 
 });
 
