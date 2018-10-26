@@ -43,4 +43,36 @@ $(function(){
      $("#searchText").autocomplete({source: data, appendTo: "#dropdown"}) 
      $("#menusearchtext").autocomplete({source: data, appendTo: "#dropdownmenu"}) 
 
+});
+
+$(function() {
+
+    $('#myform').validate({ // initialize the plugin
+        rules: {
+            name: {
+                required: true,
+            },
+            email: {
+                required: true,
+                email: true
+            },
+            message: {
+                required: false,
+                maxlenght: 200
+            }
+        },
+
+        messages: {
+            name: "Fyll i ditt namn",
+            email: {
+                required: "Fyll i din mailadress",
+                email: "Fyll i en giltig mailadress"
+            }
+          },
+
+          submitHandler: function(form) {
+            form.submit();
+          }
     });
+
+});
