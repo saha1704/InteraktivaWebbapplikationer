@@ -5,8 +5,8 @@
 #channellist{
 text-align: center;
 width: 100%;
-}
 
+}
 
 #channellist ul{
     width: 93%;
@@ -39,7 +39,10 @@ width: 100%;
 #channelLogoTv6{
     width: px;
     height: 45px;
-    padding-left: 45px;
+}
+
+#tv6box{
+    padding-left: 40px;
 }
 
 #tv3 p{
@@ -50,10 +53,6 @@ width: 100%;
 #channelinfocontainer{
     display: inline-block;
    overflow: hidden;
-}
-
-.day{
-    
 }
 
 .col{

@@ -35,10 +35,10 @@
 			<div id="mobilemenu">
 				<a href="javascript:void(0);" id="menuicon"> <img src="img/menu-icon.png" alt="mobilemenuicon" id="menuicon"> </a>
 				<ul id="mobilemenulist">
-					<li id="exitmenuicon" ><a href="#"><img src="img/x.png" alt="exiticon" id="exitmenuicon"></a></li>
-					<li><a href="Channels.html" id="channelbutton">Kanaler</a></li>
-					<li><a href="LogIn.html">Logga in</a></li>
-					<li> 			
+					<li id="exitmenuicon" class="padd" ><a href="#"><img src="img/x.png" alt="exiticon" id="exitmenuicon"></a></li>
+					<li class="padd"><a href="Channels.html" id="channelbutton">Kanaler</a></li>
+					<li class="padd"><a href="LogIn.html">Logga in</a></li>
+					<li class="padd"> 			
 						<div id="searchmenu">
 							<form id="menusearchform" action="#" onsubmit="findprogram(true)">
 								<input  id="menusearchtext" type="text" name="menusearchstring" placeholder="Sök.."/>
@@ -46,6 +46,7 @@
 							</form>
 						</div>
 					</li>
+					<div class="lesspadd" id="dropdownmenu"></div>
 				</ul>
 			</div>
 
@@ -66,11 +67,14 @@
 				<form id="searchform" action="#" onsubmit="findprogram()" class="disappear tabletdisappear">
 					<input id="searchText" type="text" name="searchstring" placeholder="Sök.."/>
 					<button id="searchButton" type="submit"><img src="img/search_icon.png" alt="sök" width="20px" height="20px"></i></button>
-					</form>
+				</form>
+					
 			</div>
-
+			
 			
 		</header>
+
+		<div id="dropdown"></div>
 		
 		<div id="container">
 

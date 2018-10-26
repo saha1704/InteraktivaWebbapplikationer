@@ -4,71 +4,80 @@
 
 <!-- Martin -->
 
-	<head>
-		<meta http-equiv="Content type" content="text/html" charset="UTF-8"/>
-		<meta name="viewport" content="width=divice-width, initial-scale=1.0"/>
+<head>
+	<meta http-equiv="Content type" content="text/html" charset="UTF-8"/>
+	<meta name="viewport" content="width=divice-width, initial-scale=1.0"/>
 
-		<script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+			
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+	<link rel="stylesheet" href="stylesheets/stilmall.css"/>
+	<link rel="stylesheet" href="stylesheets/responsiv.css"/>
+	<link rel="stylesheet" href="stylesheets/Login.css"/>
+	
+	<title>Tv-tablå</title>
+
+</head>
+
+<body>
+
+	<header id="upperheader" class="clearfix">
+		<div id="todaycontainer">
+		<a href="#" id="today">Idag</a>
+		</div>
+		<a href="index.html" id="headerwrapper" class="clearfix">
+			<img src="img/tv.png" alt="Huvudikon" id="mainicon">
+			<h1 id="title" class="disappear">Tv-tablå</h1>
+			<p id="greeting" class="disappear tabletdisappear">Placeholder</p>
+		</a>
 		
-		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
-		<link rel="stylesheet" href="stylesheets/stilmall.css"/>
-        <link rel="stylesheet" href="stylesheets/responsiv.css"/>
-        <link rel="stylesheet" href="stylesheets/LogIn.css"/>
-		<title>Channels</title>
+		<!--innehåll i hamburgermeny i mobilläge-->						
+		
+		<a id="login" href="LogIn.html" class="disappear tabletdisappear">Logga in</a>
+		<div id="mobilemenu">
+			<a href="javascript:void(0);" id="menuicon"> <img src="img/menu-icon.png" alt="mobilemenuicon" id="menuicon"> </a>
+			<ul id="mobilemenulist">
+				<li id="exitmenuicon" class="padd" ><a href="#"><img src="img/x.png" alt="exiticon" id="exitmenuicon"></a></li>
+				<li class="padd"><a href="Channels.html" id="channelbutton">Kanaler</a></li>
+				<li class="padd"><a href="LogIn.html">Logga in</a></li>
+				<li class="padd"> 			
+					<div id="searchmenu">
+						<form id="menusearchform" action="#" onsubmit="findprogram(true)">
+							<input  id="menusearchtext" type="text" name="menusearchstring" placeholder="Sök.."/>
+							<button id="menusearchbutton" type="submit"><img src="img/search_icon.png" alt="sök" width="20px" height="20px"></i></button>
+						</form>
+					</div>
+				</li>
+				<div class="lesspadd" id="dropdownmenu"></div>
+			</ul>
+		</div>
 
-	</head>
+	</header>
 
-	<body>
+	<header id="lowerheader" class="clearfix">
+		<nav>
+			<ul>
+				<a href="index.html" ><li>Tablå</li></a>
+				<a href="Channels.html"><li class="disappear">Kanaler</li></a>
+				<a href="Movies.html"><li>Film</li></a>
+				<a href="Series.html"><li>Serier</li></a>
+			</ul>
+		</nav>
+		
+		
+		<div class="search" >
+			<form id="searchform" action="#" onsubmit="findprogram()" class="disappear tabletdisappear">
+				<input id="searchText" type="text" name="searchstring" placeholder="Sök.."/>
+				<button id="searchButton" type="submit"><img src="img/search_icon.png" alt="sök" width="20px" height="20px"></i></button>
+			</form>
+				
+		</div>
+		
+		
+	</header>
 
-		<header id="upperheader" class="clearfix">
-			<div id="todaycontainer">
-			<a href="#" id="today">Idag</a>
-			</div>
-			<a href="index.html" id="headerwrapper" class="clearfix">
-				<img src="img/tv.png" alt="Huvudikon" id="mainicon">
-				<h1 id="title" class="disappear">Tv-tablå</h1>
-				<p id="greeting" class="disappear tabletdisappear">Placeholder</p>
-			</a>
-
-			<a id="login" href="#" class="disappear tabletdisappear">Logga in</a>
-			<div id="mobilemenu">
-				<a href="javascript:void(0);" id="menuicon"> <img src="img/menu-icon.png" alt="mobilemenuicon" id="menuicon"> </a>
-				<ul id="mobilemenulist">
-					<li id="exitmenuicon" ><a href="#"><img src="img/x.png" alt="exiticon" id="exitmenuicon"></a></li>
-					<li><a href="Channels.html" id="channelbutton">Kanaler</a></li>
-					<li><a href="LogIn.html">Logga in</a></li>
-					<li> 			
-						<div id="searchmenu">
-							<form action="#">
-								<input  id="menusearchtext" type="text" name="searchsite" placeholder="Sök.."/>
-								<button id="menusearchbutton" type="submit"><img src="img/search_icon.png" alt="sök" width="20px" height="20px"></i></button>
-							</form>
-						</div>
-					</li>
-				</ul>
-			</div>
-
-        </header>
-        <header id="lowerheader" class="clearfix">
-			<nav>
-				<ul>
-					<a href="index.html"><li>Tablå</li></a>
-					<a href="Channels.html"><li class="disappear">Kanaler</li></a>
-					<a href="Movies.html"><li>Film</li></a>
-					<a href="Series.html"><li>Serier</li></a>
-				</ul>
-			</nav>
-			
-			
-			<div class="search" >
-				<form action="#" class="disappear tabletdisappear">
-					<input id="searchText" type="text" name="searchsite" placeholder="Sök.."/>
-					<button id="searchButton" type="submit"><img src="img/search_icon.png" alt="sök" width="20px" height="20px"></i></button>
-					</form>
-			</div>
-
-			
-        </header>
+	<div id="dropdown"></div>
 		
 		
 
