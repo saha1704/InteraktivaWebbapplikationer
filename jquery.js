@@ -16,7 +16,6 @@ $(document).ready(function(){
     $("#svt1").click(function(){
         $('.day').hide();
         $(svt1guide).show(150);
-        
     });
 
     $("#tv3").click(function(){
@@ -47,7 +46,8 @@ $(function(){
 
 $(function() {
 
-    $('#myform').validate({ // initialize the plugin
+    $('#myform').validate({
+         
         rules: {
             name: {
                 required: true,
@@ -57,8 +57,8 @@ $(function() {
                 email: true
             },
             message: {
-                required: false,
-                maxlenght: 200
+                required: true,
+
             }
         },
 
@@ -67,12 +67,17 @@ $(function() {
             email: {
                 required: "Fyll i din mailadress",
                 email: "Fyll i en giltig mailadress"
+            },
+            message:{ 
+                required: "Skriv ditt meddelande",                
             }
           },
 
-          submitHandler: function(form) {
-            form.submit();
-          }
+        submitHandler: function(form) {
+            alert("Ditt meddelande har skickats."),
+            form.submit()
+        }
     });
+
 
 });
